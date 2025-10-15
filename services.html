@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Maeliza Enterprise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Copy the same base styles from index.html */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+        :root {
+            --primary-color: #00d4ff;
+            --primary-dark: #0099cc;
+            --secondary-color: #ffffff;
+            --background-color: #0a0e13;
+            --card-color: #151b23;
+            --border-color: #2d3748;
+            --text-color: #e2e8f0;
+            --text-secondary-color: #94a3b8;
+            --accent-color: #64ffda;
+            --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            --gradient-dark: linear-gradient(135deg, #0a0e13 0%, #1a202c 100%);
+            --shadow-lg: 0 20px 40px rgba(0, 212, 255, 0.15);
+            --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gradient-dark);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Include all the base styles from index.html for consistency */
+        /* ... (header, navigation, footer styles) ... */
+
+        /* Services Page Specific Styles */
+        .page-hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .service-detail {
+            padding: 100px 0;
+        }
+
+        .service-detail:nth-child(even) {
+            background: rgba(21, 27, 35, 0.3);
+        }
+
+        .service-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .service-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .service-info h3 {
+            color: var(--primary-color);
+            margin: 30px 0 15px;
+        }
+
+        .service-features {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .service-features li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-features i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .service-image {
+            position: relative;
+        }
+
+        .service-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .pricing-section {
+            padding: 100px 0;
+            background: rgba(21, 27, 35, 0.5);
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .pricing-card {
+            background: rgba(10, 14, 19, 0.8);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(45, 55, 72, 0.3);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--gradient-primary);
+            color: var(--background-color);
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin: 20px 0;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--text-secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Include same header as index.html -->
+    
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive AI and design solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <section class="service-detail" id="ai-automation">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-info">
+                    <h2>AI Automation</h2>
+                    <p>Transform your business operations with intelligent automation that reduces costs, increases efficiency, and drives innovation.</p>
+                    <h3>Key Features</h3>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Custom AI model development</li>
+                        <li><i class="fas fa-check-circle"></i> Process automation workflows</li>
+                        <li><i class="fas fa-check-circle"></i> Predictive analytics</li>
+                        <li><i class="fas fa-check-circle"></i> Natural language processing</li>
+                        <li><i class="fas fa-check-circle"></i> Computer vision solutions</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="service-image">
+                    <img src="https://i.ibb.co/m5TBCQdP/Google-AI-Studio-2025-09-22-T17-09-40-414-Z.png" alt="AI Automation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-detail" id="web-design">
+        <div class="container">
+            <div class="service-content">
+                <div class="service-image">
+                    <img src="https://i.ibb.co/3qT3vrL/Screenshot-20250922-181908-com-android-chrome-Chrome-Tabbed-Activity.jpg" alt="Web Design">
+                </div>
+                <div class="service-info">
+                    <h2>Web Design & Development</h2>
+                    <p>Create stunning, responsive websites that engage users and drive conversions with our expert design and development team.</p>
+                    <h3>What We Offer</h3>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Custom website design</li>
+                        <li><i class="fas fa-check-circle"></i> E-commerce solutions</li>
+                        <li><i class="fas fa-check-circle"></i> Progressive web apps</li>
+                        <li><i class="fas fa-check-circle"></i> SEO optimization</li>
+                        <li><i class="fas fa-check-circle"></i> Performance optimization</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Flexible Pricing Plans</h2>
+                <p class="section-description">Choose the perfect plan for your business needs</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="pricing-price">$999<span>/month</span></div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Basic AI automation</li>
+                        <li><i class="fas fa-check"></i> 5 design projects</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li><i class="fas fa-check"></i> Monthly reports</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Choose Plan</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Professional</h3>
+                    <div class="pricing-price">$2,999<span>/month</span></div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Advanced AI solutions</li>
+                        <li><i class="fas fa-check"></i> Unlimited design projects</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Weekly reports</li>
+                        <li><i class="fas fa-check"></i> Custom integrations</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="pricing-price">Custom</div>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom AI development</li>
+                        <li><i class="fas fa-check"></i> Dedicated team</li>
+                        <li><i class="fas fa-check"></i> 24/7 support</li>
+                        <li><i class="fas fa-check"></i> Real-time analytics</li>
+                        <li><i class="fas fa-check"></i> SLA guarantee</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include same footer as index.html -->
+</body>
+</html>
