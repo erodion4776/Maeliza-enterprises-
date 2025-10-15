@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Maeliza Enterprise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Include base styles */
+        
+        .about-hero {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--secondary-color);
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-box h3 {
+            font-size: 3rem;
+            color: var(--primary-color);
+            font-weight: 800;
+        }
+
+        .stat-box p {
+            color: var(--text-secondary-color);
+        }
+
+        .team-section {
+            padding: 100px 0;
+            background: rgba(21, 27, 35, 0.3);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .team-member {
+            text-align: center;
+            background: rgba(10, 14, 19, 0.6);
+            padding: 40px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(45, 55, 72, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--background-color);
+            font-weight: 700;
+        }
+
+        .team-member h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .team-member .role {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .team-member p {
+            color: var(--text-secondary-color);
+            line-height: 1.6;
+        }
+
+        .values-section {
+            padding: 100px 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .value-card {
+            padding: 40px;
+            background: rgba(21, 27, 35, 0.8);
+            border-radius: 20px;
+            border: 1px solid rgba(45, 55, 72, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--background-color);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include same header -->
+    
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Maeliza Enterprise</h1>
+            <p>Pioneering the future of AI and creative design since 2020</p>
+        </div>
+    </section>
+
+    <section class="about-intro">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded with a vision to democratize AI technology, Maeliza Enterprise has grown from a small startup to a leading force in digital innovation. We believe in the power of combining human creativity with artificial intelligence to solve complex business challenges.</p>
+                    <p>Our journey began with a simple question: How can we make advanced technology accessible to businesses of all sizes? Today, we're proud to have helped hundreds of companies transform their operations and achieve extraordinary results.</p>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <h3>500+</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>200+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>50+</h3>
+                            <p>Team Members</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>15+</h3>
+                            <p>Countries Served</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.ibb.co/Gfch3p1m/Generated-Image-September-22-2025-4-12-PM.png" alt="About Us" style="width: 100%; border-radius: 20px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-description">The brilliant minds behind Maeliza Enterprise</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">EO</div>
+                    <h3>Elizabeth Osagie</h3>
+                    <p class="role">CEO & Founder</p>
+                    <p>Visionary leader with 10+ years in AI and technology innovation</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">JM</div>
+                    <h3>James Mitchell</h3>
+                    <p class="role">CTO</p>
+                    <p>Expert in AI architecture and machine learning systems</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">SC</div>
+                    <h3>Sarah Chen</h3>
+                    <p class="role">Creative Director</p>
+                    <p>Award-winning designer with a passion for innovation</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">RK</div>
+                    <h3>Robert Kumar</h3>
+                    <p class="role">Head of Development</p>
+                    <p>Full-stack developer specializing in scalable solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-description">The principles that guide everything we do</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation</h3>
+                    <p>We constantly push boundaries and explore new technologies to deliver cutting-edge solutions</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>We build trust through transparency, honesty, and ethical business practices</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>We believe in the power of teamwork and partnership to achieve extraordinary results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include same footer -->
+</body>
+</html>
