@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools - Maeliza Enterprise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Include base styles */
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .tool-card {
+            background: rgba(21, 27, 35, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(45, 55, 72, 0.3);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .tool-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--background-color);
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .tool-card p {
+            color: var(--text-secondary-color);
+            margin-bottom: 25px;
+        }
+
+        .tool-status {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .status-available {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+
+        .status-beta {
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+        }
+
+        .status-coming {
+            background: rgba(148, 163, 184, 0.2);
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include same header -->
+    
+    <section class="page-hero">
+        <div class="container">
+            <h1>AI-Powered Tools</h1>
+            <p>Cutting-edge tools to streamline your workflow and boost productivity</p>
+        </div>
+    </section>
+
+    <section class="tools-section">
+        <div class="container">
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Content Generator</h3>
+                    <span class="tool-status status-available">Available</span>
+                    <p>Generate high-quality content in seconds using advanced AI language models</p>
+                    <a href="#" class="btn btn-primary">Try Now</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>AI Image Creator</h3>
+                    <span class="tool-status status-available">Available</span>
+                    <p>Create stunning visuals and artwork with our AI-powered image generation tool</p>
+                    <a href="#" class="btn btn-primary">Try Now</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editor Pro</h3>
+                    <span class="tool-status status-beta">Beta</span>
+                    <p>Edit and enhance videos with AI-powered features and automated effects</p>
+                    <a href="#" class="btn btn-primary">Join Beta</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Code Assistant</h3>
+                    <span class="tool-status status-available">Available</span>
+                    <p>AI-powered coding assistant that helps you write better code faster</p>
+                    <a href="#" class="btn btn-primary">Try Now</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <span class="tool-status status-available">Available</span>
+                    <p>Comprehensive analytics and insights powered by machine learning</p>
+                    <a href="#" class="btn btn-primary">Try Now</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>AI Chatbot Builder</h3>
+                    <span class="tool-status status-coming">Coming Soon</span>
+                    <p>Build intelligent chatbots for customer service and engagement</p>
+                    <a href="#" class="btn btn-secondary">Notify Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include same footer -->
+</body>
+</html>
